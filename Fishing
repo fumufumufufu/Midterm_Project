@@ -4,7 +4,34 @@
 <h1 align = "center">FISHING STORE ORDER FORM</h1>
 <p align ="center">We rent all of our fishing equipment by the week.</p>
 <form method = "post" name = "form" action ="javascript:void(0)">
-<table border
+<table border = "0" width ="39%" align = "center">
+<tr>
+<td width = "48%"><b>Product Name</b></td>
+<td width = "10%"><b>Price</b></td>
+<td width = "43%"><b>Quantity</b></td>
+</tr>
+<tr>
+<td width ="48%"> 1 Fishing ROd &amp;Reel</td>
+<td width = "10%">
+<input type = "text" name ="txtRod" size="5" value ="7.99"></td>
+<td width = "43%"><select sizee = "1" name="qRod">
+<option selected value = "0">
+  Select Quantity</option>
+<option value = "1">1</option>
+<option value = "2">2</option> 
+<option value = "3">3</option> 
+</selected></td></tr>
+<tr>
+<td width = "48%">1 Tackle Box</td>
+<input type = "text" name = "txtBox" size = "5" value = "2.55"></td>
+<td width = "43%"><select sizee = "1" name="qBox">
+<option selected value = "0">
+  Select Quantity</option>
+<option value = "1">1</option>
+<option value = "2">2</option> 
+<option value = "3">3</option> 
+</selected></td></tr></table>
+
 
 </body>
 </html>
