@@ -31,6 +31,28 @@
 <option value = "2">2</option> 
 <option value = "3">3</option> 
 </selected></td></tr></table>
+<p align = "center">
+<input type = "submit" value = "Calculate your order" name = "btnSubmit" onClick = "calcTotal()">
+<input type = "reset" value = "Clear" name = "btnClear">
+<p align ="center"> Thank you for your purchase.</p>
+<p align = "center"> Your total is:</p>
+<p align = "center">
+<input type = "text" name ="txtTotal" size = "10" value = "0.00"></p>
+</form>
+<script language = "javascript">
+fuction calcTotal(){
+  var strRod,strBox,prRod,prBox,strTotal;
+  strRod = document.form.qRod.value;
+  strBod = document.form.qBox.value;
+  prRod = document.form.txtRod.value;
+  prRod = document.form.txtBox.value;
+  strRod = parseInt(strRod)*prRod;
+  strBox = parseInt(strBox)*prBox;
+  strTotal = (strRod +strBox);
+  document.form.txtTotal.value = strTotal;
+  }
+  </script>
+
 
 
 </body>
