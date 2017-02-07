@@ -8,6 +8,7 @@
   strBox = document.form.qBox.value;
   prRod = document.form.txtRod.value;
   prBox = document.form.txtBox.value;
+  </script>
   
 <h1 align = "center">FISHING STORE ORDER FORM</h1>
 <p align ="center">We rent all of our fishing equipment by the week.</p>
@@ -48,13 +49,13 @@
 <p align = "center">
 <input type = "text" name ="txtTotal" size = "10" value = "0.00"></p>
 </form>
-
+<script language = "javascript">
 
   strRod = parseInt(strRod)* prRod;
   strBox = parseInt(strBox)* prBox;
   strTotal = (strRod + strBox);
   document.form.txtTotal.value = strTotal;
-  }
+  
   </script>
 
 
