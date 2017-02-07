@@ -34,7 +34,22 @@
 <option value = "1">1</option>
 <option value = "2">2</option> 
 <option value = "3">3</option> 
-</select></td></tr></table>
+  
+  
+</select></td></tr>
+  <tr>
+<td width = "48%">1 Taga Box</td>
+  <td width ="10%">
+  <input type = "text" name = "txttgBox" size = "5" value = "1.75"></td>
+<td width = "43%"><select sizee = "1" name="qtgBox">
+<option selected value = "0">
+  Select Quantity</option>
+<option value = "1">1</option>
+<option value = "2">2</option> 
+<option value = "3">3</option> 
+  </select></td></tr>
+  
+  </table>
 <p align = "center">
 <input type = "submit" value = "Calculate your order" name = "btnSubmit" onClick = "calcTotal()">
 <input type = "reset" value = "Clear" name = "btnClear">
@@ -57,7 +72,21 @@
   document.form.txtTotal.value = strTotal;
   
   </script>
-
+<form name = "frmColor" action ="javascript:void(0);">
+  <input type="submit" value="White" name = "bW" onClick = "selectColor('White')">
+   <input type="submit" value="Yellow" name = "bY" onClick = "selectColor('Yellow')">
+   <input type="submit" value="Fushcia" name = "bF" onClick = "selectColor('White')">
+   <input type="submit" value="Green" name = "bG" onClick = "selectColor('Green')">
+   <input type="submit" value="Purple" name = "bP" onClick = "selectColor('Purple')">
+   <input type="submit" value="Silver" name = "bS" onClick = "selectColor('Silver')">
+   <input type="submit" value="Teal" name = "bT" onClick = "selectColor('Teal')">
+   <input type="submit" value="Olive" name = "bO" onClick = "selectColor('Olive')">
+  </form>
+ <script language = "javascript">
+   fuction selectColor(selectColor){
+     document.bgColor = selectColor;
+   }
+  </script>
 
 
 </body>
