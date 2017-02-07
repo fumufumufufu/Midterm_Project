@@ -14,7 +14,7 @@
 <td width ="48%"> 1 Fishing ROd &amp;Reel</td>
 <td width = "10%">
 <input type = "text" name ="txtRod" size="5" value ="7.99"></td>
-<td width = "43%"><select sizee = "1" name="qRod">
+<td width = "43%"><select size = "1" name="qRod">
 <option selected value = "0">
   Select Quantity</option>
 <option value = "1">1</option>
@@ -42,14 +42,14 @@
 </form>
 <script language = "javascript">
 fuction calcTotal(){
-  var strRod,strBox,prRod,prBox,strTotal;
+  var strRod, strBox, prRod, prBox, strTotal;
   strRod = document.form.qRod.value;
   strBox = document.form.qBox.value;
   prRod = document.form.txtRod.value;
   prBox = document.form.txtBox.value;
   strRod = parseInt(strRod)*prRod;
   strBox = parseInt(strBox)*prBox;
-  strTotal = (strRod +strBox);
+  strTotal = (strRod + strBox);
   document.form.txtTotal.value = strTotal;
   }
   </script>
